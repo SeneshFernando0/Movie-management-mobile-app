@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2e2e2"
+    tools:context=".EditMovieScenePart2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#bcbcbc"
+        android:gravity="center_horizontal"
+        android:text="Movie Details"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:text="Movie title"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextMovieTitle"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:text="Movie Year" />
+
+        <EditText
+            android:id="@+id/editTextMovieYear"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:text="Movie Director" />
+
+        <EditText
+            android:id="@+id/editTextmoviedirector"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:text="Actors/Actresses" />
+
+        <EditText
+            android:id="@+id/editTextActors"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="64dp"
+            android:gravity="bottom"
+            android:layout_height="29dp"
+            android:text="Rating" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:numStars="10" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:text="Review" />
+
+        <EditText
+            android:id="@+id/editTextReview"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:text="Favourite" />
+
+        <CheckBox
+            android:id="@+id/favCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:onClick="UpdateButton"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:onClick="tohome"
+        android:text="home" />
+
+
+</LinearLayout>

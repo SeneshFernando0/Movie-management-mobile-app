@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditMovieScene">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#bcbcbc"
+        android:gravity="center_horizontal"
+        android:text="Select Movie To Edit"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="574dp">
+
+        <TableLayout
+            android:id="@+id/buttonlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="444dp"
+            android:orientation="horizontal">
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="tohome"
+        android:text="Home" />
+
+
+
+
+</LinearLayout>
